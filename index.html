@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Rate Your Judge</title>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBnRkw5tZYUIFDrUmK5O8xgbgTtn4WQOM8",
+            authDomain: "timesheetexample-e97ff.firebaseapp.com",
+            databaseURL: "https://timesheetexample-e97ff.firebaseio.com",
+            projectId: "timesheetexample-e97ff",
+            storageBucket: "timesheetexample-e97ff.appspot.com",
+            messagingSenderId: "300709328441"
+        };
+        firebase.initializeApp(config);
+        var database = firebase.database();
+    </script> -->
+</head>
+
+<body>
+
+<div class="container">
+
+    <br>
+
+    <!-- Jumbotron Title -->
+    <div style="background:black; color:white" class="jumbotron">
+        <h1 class="text-center">Rate your Judge</h1>
+        <h3 class="text-center">The Best way to Show your Hatred for the Judges</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card card-default">
+                <div class="card-body">
+                    <h3><strong>Search Results</strong>:</h3>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Division</th>
+                        <th scope="col">Judge Name</th>
+                        <th scope="col">Court Location</th>
+
+
+
+
+                        <!-- <th scope="col">Months Worked</th>
+                        <th scope="col">Monthly Rate ($)</th>
+                        <th scope="col">Total Billed ($)</th> -->
+
+                    </tr>
+                    </thead>
+                    <tbody id="judgeTable">
+                    <tr>
+                        <td> Molesting perverts </td>
+                        <td> Harvey Weinstein</td>
+                        <td> 420 Northwestern Street</td>
+                    </tr>
+                    </tbody>
+
+
+
+
+                </table>
+
+                </tr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Artist Select Box -->
+    <form id="judgeForm" action="/action_page.php">
+
+        <!-- Label for Text Box -->
+        <label for="artist-input">Choose Your Judge</label><br>
+
+        <!-- Text Input Box -->
+        <input type="text" id="firstName"><br>
+
+        <input type="text" id="lastName" required><br>
+
+        <!-- Submit Button -->
+        <input id="submit" type="submit" value="GO!">
+    </form>
+
+    <!-- Below is Add Employee Form -->
+    <!-- <div class="row">
+      <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-heading">
+            <h3 class="card-title">Add Employee</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <label for="employee-name">Employee Name</label>
+                <input class="form-control" id="employee-name" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="employee-price">Role</label>
+                <input class="form-control" id="employee-role" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="start-date">Start Date (DD/MM/YY - ex:01/01/89)</label>
+                <input class="form-control" id="employee-start" type="date">
+              </div>
+              <div class="form-group row">
+                <label for="monthly-rate">Monthly Rate</label>
+                <input class="form-control" id="monthly-rate" type="number">
+              </div>
+              <button class="btn btn-primary" id="submit-info" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- Script -->
+    <script src="assets/Javascript/logic.js"></script>
+
+</body>
+
+</html>
